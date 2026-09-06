@@ -1,0 +1,36 @@
+{
+  "client": "optrua",
+  "testDir": "tests/e2e",
+  "environments": {
+    "optrua-dev": {
+      "crmUrl": "https://optrua-dev.crm.dynamics.com",
+      "appIds": {
+        "opt_OptruaScoring": "7bc78503-d1bf-f011-8542-000d3a30e7f8",
+        "dyn365bc_BusinessCentralConfiguration": "8020f883-e4bb-ef11-b8e8-000d3a333e0a",
+        "AdobeSignApp": "1b130591-5571-f011-b4cc-000d3a596152",
+        "ppcl_PowerCalendar": "e5cf23a7-c479-ef11-a670-000d3a5c8a45",
+        "oh_testRenewalReminders": "94b60702-8786-f111-8075-0022480402c7",
+        "msdyn_ChannelIntegrationFrameworkApp": "632bc9e5-8eec-ed11-8849-00224805c3cf",
+        "msdyn_ProjectServiceCore": "a9aabd5f-09f4-ed11-8849-00224805c3cf",
+        "msdyn_ProjectService": "54cf8533-0ef4-ed11-8849-00224805c3cf",
+        "msdyn_TimeExpense": "0cd58533-0ef4-ed11-8849-00224805c3cf",
+        "PowerPlatformEnvironmentSettings": "84fd32ce-679e-ef11-8a6b-00224805c3cf",
+        "mspp_PowerPageManagement": "b35dd0e6-615b-ee11-be6f-00224805c3cf",
+        "cdi_clickdimensions": "1852ab87-46cf-ed11-b596-00224805c758",
+        "Dynamics365Portals": "3729d518-fd53-ed11-bba2-00224805cbf0",
+        "new_Optrua": "9014e3e3-0371-ed11-9561-00224808199b",
+        "AppDeploymentConfiguration": "43f389e6-865d-f011-877a-00224808350e",
+        "msdyn_SolutionHealthHub": "c1259c72-992b-ed11-9db0-0022480925cc",
+        "Customerservicehub": "065309a3-a32b-ed11-9db0-0022480925cc",
+        "msdyn_CustomerServiceWorkspace": "45155b37-a92b-ed11-9db0-0022480925cc",
+        "msdyn_TeamMember_Sales": "db4db06b-b42b-ed11-9db0-0022480925cc",
+        "msdynce_saleshub": "15c8e2ef-bf2b-ed11-9db0-0022480925cc",
+        "AppforOutlookModule": "21aadaeb-c72b-ed11-9db0-0022480925cc",
+        "msdyn_CSAdminCenter": "8d7d01c7-cd2b-ed11-9db0-0022480925cc",
+        "msdyn_ResourceScheduling": "b4399679-e02b-ed11-9db0-0022480925cc",
+        "opt_ADWSkillTestApp": "39e7b4c1-f49e-f111-aaad-0022480b1bfa",
+        "default": "15c8e2ef-bf2b-ed11-9db0-0022480925cc"
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Omar Taladeh\\.fts-kit\\qa-runtime\\playwright.config.ts",
+    "rootDir": "C:/Users/Omar Taladeh/.adw/projects/optrua-webresource-test-5f4e2873/trees/de63cd43/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Omar Taladeh/.fts-kit/qa-runtime/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "C:/Users/Omar Taladeh/.fts-kit/qa-runtime/utils",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.ts/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Omar Taladeh/.fts-kit/qa-runtime/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "auth-refresh",
+        "name": "auth-refresh",
+        "testDir": "C:/Users/Omar Taladeh/.fts-kit/qa-runtime/utils",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth-refresh\\.ts/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/Omar Taladeh/.fts-kit/qa-runtime/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Omar Taladeh/.adw/projects/optrua-webresource-test-5f4e2873/trees/de63cd43/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\Omar Taladeh\\.adw\\projects\\optrua-webresource-test-5f4e2873\\trees\\de63cd43\\docs\\tasks\\runtime-optrua-optrua-dev\\results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "..\\..\\..\\..\\..\\..\\..\\.fts-kit\\qa-runtime\\utils\\auth-refresh.ts",
+      "file": "../../../../../../../.fts-kit/qa-runtime/utils/auth-refresh.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "refresh D365 auth cookies",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "auth-refresh",
+              "projectName": "auth-refresh",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12750,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[optrua/optrua-dev] Auth refreshed at C:\\Users\\Omar Taladeh\\.fts-kit\\auth\\optrua-optrua-dev.auth.json.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-06T08:32:33.359Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bc5f6eaf3e35a0cb72ae-4dc44e4aa3a9dd46b1c9",
+          "file": "../../../../../../../.fts-kit/qa-runtime/utils/auth-refresh.ts",
+          "line": 26,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-06T08:32:32.815Z",
+    "duration": 13349.889,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
