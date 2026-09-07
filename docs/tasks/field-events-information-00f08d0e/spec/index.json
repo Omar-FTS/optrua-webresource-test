@@ -1,0 +1,10 @@
+{
+  "publisherPrefix": "opt",
+  "webResources": [
+    {
+      "name": "opt_automated_operations.js",
+      "spec": "opt-automated-information-form.yaml",
+      "sourceFile": "src/Resources/scripts/opt_automated_operations.js"
+    }
+  ]
+}

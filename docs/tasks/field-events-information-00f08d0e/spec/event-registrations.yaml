@@ -1,0 +1,19 @@
+version: "1"
+description: Declarative event-registration handoff emitted by webresource writing and consumed by deployment.
+webResources:
+  - name: opt_automated_operations.js
+    type: JavaScript
+    displayName: Automated Information form operations
+    target:
+      entity: opt_automated
+      form: Information
+      formType: Main
+    registrations:
+      - control: opt_length
+        event: onchange
+        handler: OptruaAutomatedSdk.onLengthChange
+        passExecutionContext: true
+      - control: opt_newcolumn
+        event: onchange
+        handler: OptruaAutomatedSdk.onNewColumnChange
+        passExecutionContext: true
