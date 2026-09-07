@@ -1,0 +1,45 @@
+version: "1"
+webResources:
+  - name: opt_automated_operations.js
+    type: JavaScript
+    displayName: Automated Information form operations
+    description: >-
+      Field onchange validation feedback on the opt_automated Information Main form:
+      a length-threshold warning on opt_length and a required-value warning on
+      opt_newcolumn.
+    sourceFile: src/Resources/scripts/opt_automated_operations.js
+    origin: new
+    removes: []
+    targetForms:
+      - entity: opt_automated
+        formName: Information
+        formType: Main
+    events:
+      - control: opt_length
+        name: onchange
+        handler: OptruaAutomatedSdk.onLengthChange
+        passExecutionContext: true
+      - control: opt_newcolumn
+        name: onchange
+        handler: OptruaAutomatedSdk.onNewColumnChange
+        passExecutionContext: true
+    ribbon: []
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.getAttribute
+      - formContext.ui.setFormNotification
+      - formContext.ui.clearFormNotification
+context:
+  reuseRefs: []
+  notes: >-
+    opt_automated.json's formCrossReference confirms the Main "Information" form
+    (formId 369b7486-f8c5-4b5e-a11e-947ed36503f9) has no <formLibraries> and no
+    <events> in its live FormXML, and webResources[] is empty for this entity, so
+    this is a first-time library attachment with no existing resource to extend
+    (AD-1 in the requirement already settles this: new resource, new namespace).
+    opt_newcolumn is the entity's primary name attribute and is already
+    ApplicationRequired at the platform level; the onchange notification this spec
+    registers is additional UX shown while editing, not a save-time block, so it
+    does not run into the native-required-field preemption case. The requirement's
+    Exact Registration Contract is reproduced verbatim in events[] and in
+    event-registrations.yaml.
