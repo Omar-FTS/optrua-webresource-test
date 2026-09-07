@@ -1,0 +1,54 @@
+version: "1"
+webResources:
+  - name: opt_automated_main_operations.js
+    type: JavaScript
+    displayName: Automated form script
+    description: Form and field behavior for the Automated main form - record-name notification, new-column required enforcement (Run 1), and title/new-column/description field handlers (Run 2).
+    sourceFile: src/Resources/scripts/opt_automated_main_operations.js
+    origin: existing
+    removes: []
+    targetForms:
+      - entity: opt_automated
+        formName: Automated form
+        formType: Main
+    events:
+      - control: form
+        name: onload
+        handler: OptruaAutomatedSdk.formOnLoad
+        passExecutionContext: true
+      - control: form
+        name: onsave
+        handler: OptruaAutomatedSdk.formOnSave
+        passExecutionContext: true
+      - control: opt_title
+        name: onchange
+        handler: OptruaAutomatedSdk.onTitleChange
+        passExecutionContext: true
+      - control: opt_newcolumn
+        name: onchange
+        handler: OptruaAutomatedSdk.onNewColumnChange
+        passExecutionContext: true
+      - control: opt_description
+        name: onchange
+        handler: OptruaAutomatedSdk.onDescriptionChange
+        passExecutionContext: true
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.getAttribute
+      - formContext.ui.setFormNotification
+      - formContext.ui.clearFormNotification
+context:
+  reuseRefs:
+    - opt_automated.json#formsInspected[2]
+  notes: >
+    Live probe (webresourceset + systemforms(f517761c-5e4c-f111-bec6-7ced8d6feee8)) confirms
+    Run 1 is deployed: opt_automated_main_operations.js (webresourceid
+    7056a206-39aa-f111-aaab-7ced8d6f7afa) is registered on Automated form with onload ->
+    OptruaAutomatedSdk.formOnLoad and onsave -> OptruaAutomatedSdk.formOnSave, both
+    passExecutionContext=true, and the downloaded content implements both handlers plus the
+    notification IDs opt-record-name and opt-newcolumn-required. The supplied metadata_dir
+    snapshot (opt_automated.json, fetchedAt 2026-09-06T21:20:53Z) predates Run 1's deploy and
+    incorrectly shows no web resource and no form registrations; the live read above
+    supersedes it. No onTitleChange, onNewColumnChange, or onDescriptionChange exists in the
+    deployed content today, so this run's three handlers are a genuine code addition, not
+    already-satisfied behavior.
