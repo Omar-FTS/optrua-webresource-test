@@ -1,0 +1,12 @@
+{
+  "resources": [
+    {
+      "name": "opt_automated_main_operations.js",
+      "webresourceid": "3db7b0d2-9dab-f111-aaac-0022480b1bfa",
+      "webresourcetype": 3,
+      "sourcePath": "src/Resources/scripts/opt-automated-main-operations.js",
+      "baselinePath": "docs/tasks/dataverse-requirements-specification-db3fc47d/metadata/baselines/opt_automated_main_operations.js",
+      "baselineSha": "205178049f41cffeb48ca89d0e529751ff93883e58299e3e24e8a73276f69e10"
+    }
+  ]
+}

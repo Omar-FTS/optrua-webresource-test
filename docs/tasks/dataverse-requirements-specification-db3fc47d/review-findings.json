@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "review_summary": "Standards and Spec axes both clean. Two standards candidates (a getFormType() numeric-constant claim and a sourceFile naming-convention claim) were investigated and disproved by direct evidence and dropped below the confidence bar; no findings survived on either axis.",
+  "blocker_count": 0,
+  "review_issues": []
+}

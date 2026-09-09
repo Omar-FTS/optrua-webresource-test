@@ -1,0 +1,42 @@
+version: "1"
+webResources:
+  - name: opt_automated_main_operations.js
+    type: JavaScript
+    displayName: opt-automated-main-operations.js
+    description: >-
+      Automated form client script. Extends OptruaAutomatedSdk.formOnLoad with a
+      CREATE-only default that sets Title (opt_title) to the literal text "order:".
+      All pre-existing behavior in formOnLoad and formOnSave is preserved unread and
+      unmodified.
+    sourceFile: src/Resources/scripts/opt-automated-main-operations.js
+    origin: existing
+    removes: []
+    targetForms:
+      - entity: opt_automated
+        formName: Automated form
+        formType: Main
+    events:
+      - control: form
+        name: onload
+        handler: OptruaAutomatedSdk.formOnLoad
+        passExecutionContext: true
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.ui.getFormType
+      - formContext.getAttribute("opt_title").setValue
+context:
+  reuseRefs:
+    - opt_automated.json#data.facets.web-resources.data.webResources[0]
+    - opt_automated.json#data.facets.forms.data.formUsage.handlers[0]
+  notes: >-
+    opt_automated_main_operations.js is already deployed (webResourceId
+    3db7b0d2-9dab-f111-aaac-0022480b1bfa) and already loaded by "Automated form"
+    (formId f517761c-5e4c-f111-bec6-7ced8d6feee8), with OptruaAutomatedSdk.formOnLoad
+    already registered on that form's onload event and OptruaAutomatedSdk.formOnSave
+    already registered on onsave. This change extends formOnLoad in place; it does
+    not duplicate the library and does not touch formOnSave or the onsave event.
+    Live FormXml inspection (recorded in the source requirement) found the onload
+    event node active="false" despite its Handler element being enabled="true"; the
+    onload registration below restates the same handler so deployment corrects that
+    event node to active="true". The onsave event's active state is left untouched
+    because no onsave registration appears here.
