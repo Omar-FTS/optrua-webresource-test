@@ -1,0 +1,10 @@
+{
+  "publisherPrefix": "opt",
+  "webResources": [
+    {
+      "name": "opt_automated_main_operations.js",
+      "spec": "opt_automated_main_operations.yaml",
+      "sourceFile": "src/Resources/scripts/opt-automated-main-operations.js"
+    }
+  ]
+}
