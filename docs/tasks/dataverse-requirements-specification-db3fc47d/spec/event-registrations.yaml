@@ -1,0 +1,15 @@
+version: "1"
+description: Declarative event-registration handoff emitted by webresource writing and consumed by deployment.
+webResources:
+  - name: opt_automated_main_operations.js
+    type: JavaScript
+    displayName: opt-automated-main-operations.js
+    target:
+      entity: opt_automated
+      form: Automated form
+      formType: Main
+    registrations:
+      - control: form
+        event: onload
+        handler: OptruaAutomatedSdk.formOnLoad
+        passExecutionContext: true

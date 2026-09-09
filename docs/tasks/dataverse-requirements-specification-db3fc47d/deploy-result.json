@@ -1,0 +1,41 @@
+{
+  "status": "DEPLOYED",
+  "reason": "",
+  "environmentUrl": "https://optrua-dev.crm.dynamics.com",
+  "solutionName": "automatedonloadr1",
+  "resources": [
+    {
+      "name": "opt_automated_main_operations.js",
+      "type": 3,
+      "sourcePath": "src\\Resources\\scripts\\opt-automated-main-operations.js",
+      "action": "updated",
+      "error": "",
+      "guard": "ok",
+      "baselineSha": "c7afbce2c288dc6483bb872ec3c1a0d5e4b9fe813320e3eb3d2d1e8df22f6cbd",
+      "liveShaAtDeploy": "c7afbce2c288dc6483bb872ec3c1a0d5e4b9fe813320e3eb3d2d1e8df22f6cbd",
+      "published": true,
+      "solutionAssociated": true
+    }
+  ],
+  "formPatches": [
+    {
+      "entity": "opt_automated",
+      "form": "Automated form",
+      "libraries": [
+        "opt_automated_main_operations.js"
+      ],
+      "handlers": [
+        {
+          "control": "form",
+          "event": "onload",
+          "handler": "OptruaAutomatedSdk.formOnLoad",
+          "controlPresent": true,
+          "persisted": true
+        }
+      ],
+      "verified": true,
+      "error": ""
+    }
+  ],
+  "problems": []
+}

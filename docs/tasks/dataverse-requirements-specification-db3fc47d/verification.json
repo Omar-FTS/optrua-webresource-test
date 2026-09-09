@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "name": "opt_automated_main_operations.js",
+      "action": "updated",
+      "guard": "ok",
+      "published": true
+    }
+  ],
+  "forms": [
+    {
+      "entity": "opt_automated",
+      "form": "Automated form",
+      "verified": true
+    }
+  ],
+  "problems": [],
+  "verified": true
+}

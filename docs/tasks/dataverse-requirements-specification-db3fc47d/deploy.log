@@ -1,0 +1,24 @@
+🔎 Pre-flight form opt_automated/Automated form: resolved (f517761c-5e4c-f111-bec6-7ced8d6feee8)
+   Pre-flight opt_automated/Automated form: form onload -> OptruaAutomatedSdk.formOnLoad: True
+📂 Deploying 1 resource(s).
+
+📦 Deploying: opt_automated_main_operations.js
+✅ Updated: opt_automated_main_operations.js
+🗂️  Solution found: "automatedonloadr1" (00e09a5f-61ac-f111-aaac-7ced8d6f7afa)
+🗂️  Web resource added to solution: automatedonloadr1 (00e09a5f-61ac-f111-aaac-7ced8d6f7afa)
+🚀 Published!
+✅ Using pre-flight form: "Automated form" on table opt_automated (f517761c-5e4c-f111-bec6-7ced8d6feee8)
+✔️  Library already registered: opt_automated_main_operations.js
+✔️  Already registered: onload → OptruaAutomatedSdk.formOnLoad
+
+📝 Patching form XML...
+✅ Form patched.
+🗂️  Web resource already in solution — skipping.
+🗂️  Entity "opt_automated" added to solution: automatedonloadr1 (00e09a5f-61ac-f111-aaac-7ced8d6f7afa)
+🗂️  Form added to solution: automatedonloadr1 (00e09a5f-61ac-f111-aaac-7ced8d6f7afa)
+🚀 Publishing form + web resource...
+🚀 Published!
+
+📄 Result written to C:\Users\Omar Taladeh\.adw\projects\optrua-webresource-test-5f4e2873\trees\db3fc47d\docs\tasks\dataverse-requirements-specification-db3fc47d\deploy-result.json
+
+✅ DEPLOYED

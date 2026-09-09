@@ -1,0 +1,27 @@
+{
+  "slug": "dataverse-requirements-specification",
+  "solution_name": "automatedonloadr1",
+  "run_started_at": "2026-09-09T15:15:35Z",
+  "base_sha": "a5bdaaaf036728f986990adb9ea71d72ea70a0e6",
+  "base_branch": "main",
+  "stage": "committed",
+  "checkpoints": [
+    {
+      "stage": "planned",
+      "sha": "9a45c9cf34a92667276a9320db1599214b92072c"
+    },
+    {
+      "stage": "reviewed",
+      "sha": "9ede66ff96d8f40ede1e0a072ed0e86f7abdd9cd"
+    },
+    {
+      "stage": "deployed",
+      "sha": "b5dc9193599a10d9134558acd437aaa3611362b2"
+    },
+    {
+      "stage": "e2e",
+      "sha": "888bdf2a11da6657b4db533ed4b058b20c8250ac"
+    }
+  ],
+  "publisher_prefix": "opt"
+}
