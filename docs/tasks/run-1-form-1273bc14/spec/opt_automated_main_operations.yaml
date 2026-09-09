@@ -1,0 +1,46 @@
+version: "1"
+webResources:
+  - name: opt_automated_main_operations.js
+    type: JavaScript
+    displayName: Automated form script
+    description: >
+      Form-level onload and onsave handlers for the opt_automated Main form
+      ("Automated form"). onload sets a record-name notification from opt_name;
+      onsave is a registered no-op extension point and must not duplicate the
+      platform's native required-field validation on opt_newcolumn.
+    sourceFile: src/Resources/scripts/opt-automated-main-operations.js
+    origin: new
+    removes: []
+    targetForms:
+      - entity: opt_automated
+        formName: Automated form
+        formType: Main
+    events:
+      - control: form
+        name: onload
+        handler: OptruaAutomatedSdk.formOnLoad
+        passExecutionContext: true
+      - control: form
+        name: onsave
+        handler: OptruaAutomatedSdk.formOnSave
+        passExecutionContext: true
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.getAttribute
+      - formContext.ui.setFormNotification
+      - formContext.ui.clearFormNotification
+      - formContext.ui.getFormType
+context:
+  reuseRefs: []
+  notes: >
+    The Automated form's live FormXML carries no <formLibraries> and no <events>
+    element at all (metadata/opt_automated.json, forms[].note for formId
+    f517761c-5e4c-f111-bec6-7ced8d6feee8) -- zero web resources are registered on
+    this form today, so this is the first script added to it, not an extension of
+    a deployed one. opt_newcolumn's live requiredLevel is ApplicationRequired
+    (metadata/opt_automated.json, attributes[].note for opt_newcolumn), so
+    formOnSave is scoped to registration only per implementation-decisions.md's
+    "Custom save-block notification on an already-required field" -- it must not
+    read opt_newcolumn, call preventDefault(), or set/clear an
+    opt-newcolumn-required notification, since the platform's own banner would
+    preempt any custom one before it could be seen.
