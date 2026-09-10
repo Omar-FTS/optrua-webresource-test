@@ -1,0 +1,36 @@
+version: "1"
+webResources:
+  - name: taradeh_automated_main_operations.js
+    type: JavaScript
+    displayName: Automated form script
+    description: >-
+      Form-load behavior for "Automated form" on taradeh_automated. On a new
+      (create) record, defaults taradeh_title to the literal "order:"; leaves
+      taradeh_title untouched on any other form type.
+    sourceFile: src/Resources/scripts/taradeh_automated_main_operations.js
+    origin: new
+    removes: []
+    targetForms:
+      - entity: taradeh_automated
+        formName: Automated form
+        formType: Main
+    events:
+      - control: form
+        name: onload
+        handler: Orgb788707aAutomatedSdk.formOnLoad
+        passExecutionContext: true
+    ribbon: []
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.ui.getFormType
+      - formContext.getAttribute
+context:
+  reuseRefs: []
+  notes: >-
+    No resource of this name, or any resource referencing taradeh_automated's
+    forms, exists in the target environment: data.facets.web-resources.data.webResources
+    is empty and data.facets.forms.data.formUsage (libraries/handlers/controls) is
+    empty for "Automated form". This is a from-scratch build, not an extension.
+    data.facets.processes.data shows no business rules, flows, classic workflows,
+    or BPFs on taradeh_automated, so no configuration-only path already covers this
+    default.

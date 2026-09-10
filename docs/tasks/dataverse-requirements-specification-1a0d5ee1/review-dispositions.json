@@ -1,0 +1,16 @@
+{
+  "dispositions": [
+    {
+      "review_issue_number": 1,
+      "disposition": "applied",
+      "files_changed": ["src/Resources/scripts/taradeh_automated_main_operations.js"],
+      "reason": ""
+    },
+    {
+      "review_issue_number": 2,
+      "disposition": "applied",
+      "files_changed": ["src/Resources/scripts/taradeh_automated_main_operations.js"],
+      "reason": ""
+    }
+  ]
+}
