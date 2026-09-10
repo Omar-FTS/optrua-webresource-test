@@ -1,0 +1,2783 @@
+{
+  "schemaVersion": 2,
+  "kind": "dataverse-metadata",
+  "facet": "inventory",
+  "scope": {
+    "mode": "entity",
+    "entity": "taradeh_automated"
+  },
+  "fetchedAt": "2026-09-10T10:37:50Z",
+  "status": "ok",
+  "exists": true,
+  "httpStatus": 200,
+  "selection": {
+    "requested": [
+      "entity",
+      "forms",
+      "web-resources",
+      "plugins",
+      "processes"
+    ],
+    "resolved": [
+      "entity",
+      "forms",
+      "plugins",
+      "processes",
+      "web-resources"
+    ],
+    "implicit": [],
+    "omitted": [
+      "apps",
+      "charts",
+      "custom-apis",
+      "dashboards",
+      "keys",
+      "optionsets",
+      "privileges",
+      "relationships",
+      "service-endpoints",
+      "status-transitions"
+    ]
+  },
+  "data": {
+    "facets": {
+      "entity": {
+        "schemaVersion": 2,
+        "kind": "dataverse-metadata",
+        "facet": "entity",
+        "scope": {
+          "mode": "entity",
+          "entity": "taradeh_automated"
+        },
+        "fetchedAt": "2026-09-10T10:35:36Z",
+        "status": "ok",
+        "exists": true,
+        "httpStatus": 200,
+        "data": {
+          "entity": {
+            "logicalName": "taradeh_automated",
+            "schemaName": "taradeh_Automated",
+            "entitySetName": "taradeh_automateds",
+            "logicalCollectionName": "taradeh_automateds",
+            "displayName": "Automated",
+            "displayCollectionName": "Automateds",
+            "primaryIdAttribute": "taradeh_automatedid",
+            "primaryNameAttribute": "taradeh_name",
+            "primaryImageAttribute": null,
+            "objectTypeCode": 11488,
+            "ownershipType": "UserOwned",
+            "isActivity": false,
+            "isActivityParty": false,
+            "isCustomEntity": true,
+            "isManaged": false,
+            "isIntersect": false,
+            "isBPFEntity": false,
+            "isLogicalEntity": false,
+            "isAuditEnabled": false,
+            "isValidForAdvancedFind": true,
+            "isValidForQueue": false,
+            "changeTrackingEnabled": false,
+            "isRetrieveAuditEnabled": false,
+            "isDuplicateDetectionEnabled": true,
+            "isCustomizable": true,
+            "introducedVersion": "1.0"
+          },
+          "attributeCount": 26,
+          "attributes": [
+            {
+              "logicalName": "createdby",
+              "schemaName": "CreatedBy",
+              "attributeType": "Lookup",
+              "attributeTypeName": "LookupType",
+              "displayName": "Created By",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Unique identifier of the user who created the record.",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": true,
+                "isValidForGrid": true
+              },
+              "typeDetails": {
+                "targets": [
+                  "systemuser"
+                ]
+              }
+            },
+            {
+              "logicalName": "createdbyname",
+              "schemaName": "CreatedByName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "createdbyyominame",
+              "schemaName": "CreatedByYomiName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "createdon",
+              "schemaName": "CreatedOn",
+              "attributeType": "DateTime",
+              "attributeTypeName": "DateTimeType",
+              "displayName": "Created On",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Date and time when the record was created.",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": true,
+                "isValidForGrid": true
+              },
+              "typeDetails": {
+                "format": "DateAndTime",
+                "dateTimeBehavior": "UserLocal"
+              }
+            },
+            {
+              "logicalName": "createdonbehalfby",
+              "schemaName": "CreatedOnBehalfBy",
+              "attributeType": "Lookup",
+              "attributeTypeName": "LookupType",
+              "displayName": "Created By (Delegate)",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Unique identifier of the delegate user who created the record.",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": true,
+                "isValidForGrid": true
+              },
+              "typeDetails": {
+                "targets": [
+                  "systemuser"
+                ]
+              }
+            },
+            {
+              "logicalName": "createdonbehalfbyname",
+              "schemaName": "CreatedOnBehalfByName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "createdonbehalfbyyominame",
+              "schemaName": "CreatedOnBehalfByYomiName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "modifiedby",
+              "schemaName": "ModifiedBy",
+              "attributeType": "Lookup",
+              "attributeTypeName": "LookupType",
+              "displayName": "Modified By",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Unique identifier of the user who modified the record.",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": true,
+                "isValidForGrid": true
+              },
+              "typeDetails": {
+                "targets": [
+                  "systemuser"
+                ]
+              }
+            },
+            {
+              "logicalName": "modifiedbyname",
+              "schemaName": "ModifiedByName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "modifiedbyyominame",
+              "schemaName": "ModifiedByYomiName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "modifiedon",
+              "schemaName": "ModifiedOn",
+              "attributeType": "DateTime",
+              "attributeTypeName": "DateTimeType",
+              "displayName": "Modified On",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Date and time when the record was modified.",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": true,
+                "isValidForGrid": true
+              },
+              "typeDetails": {
+                "format": "DateAndTime",
+                "dateTimeBehavior": "UserLocal"
+              }
+            },
+            {
+              "logicalName": "modifiedonbehalfby",
+              "schemaName": "ModifiedOnBehalfBy",
+              "attributeType": "Lookup",
+              "attributeTypeName": "LookupType",
+              "displayName": "Modified By (Delegate)",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Unique identifier of the delegate user who modified the record.",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": true,
+                "isValidForGrid": true
+              },
+              "typeDetails": {
+                "targets": [
+                  "systemuser"
+                ]
+              }
+            },
+            {
+              "logicalName": "modifiedonbehalfbyname",
+              "schemaName": "ModifiedOnBehalfByName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "modifiedonbehalfbyyominame",
+              "schemaName": "ModifiedOnBehalfByYomiName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "ownerid",
+              "schemaName": "OwnerId",
+              "attributeType": "Owner",
+              "attributeTypeName": "OwnerType",
+              "displayName": "Owner",
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": true,
+              "description": "Owner Id",
+              "typeDetails": {
+                "targets": [
+                  "systemuser",
+                  "team"
+                ]
+              }
+            },
+            {
+              "logicalName": "owneridname",
+              "schemaName": "OwnerIdName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Name of the owner",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "owneridyominame",
+              "schemaName": "OwnerIdYomiName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Yomi name of the owner",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "owningbusinessunit",
+              "schemaName": "OwningBusinessUnit",
+              "attributeType": "Lookup",
+              "attributeTypeName": "LookupType",
+              "displayName": "Owning Business Unit",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": true,
+              "description": "Unique identifier for the business unit that owns the record",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": true,
+                "isValidForGrid": true
+              },
+              "typeDetails": {
+                "targets": [
+                  "businessunit"
+                ]
+              }
+            },
+            {
+              "logicalName": "owningbusinessunitname",
+              "schemaName": "OwningBusinessUnitName",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": null,
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": true,
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "owningteam",
+              "schemaName": "OwningTeam",
+              "attributeType": "Lookup",
+              "attributeTypeName": "LookupType",
+              "displayName": "Owning Team",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Unique identifier for the team that owns the record.",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "targets": [
+                  "team"
+                ]
+              }
+            },
+            {
+              "logicalName": "owninguser",
+              "schemaName": "OwningUser",
+              "attributeType": "Lookup",
+              "attributeTypeName": "LookupType",
+              "displayName": "Owning User",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": true,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Unique identifier for the user that owns the record.",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": false,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              },
+              "typeDetails": {
+                "targets": [
+                  "systemuser"
+                ]
+              }
+            },
+            {
+              "logicalName": "statecode",
+              "schemaName": "statecode",
+              "attributeType": "State",
+              "attributeTypeName": "StateType",
+              "displayName": "Status",
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": true,
+              "description": "Status of the Automated",
+              "validity": {
+                "isValidForCreate": false,
+                "isValidForUpdate": true,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": true,
+                "isValidForGrid": true
+              },
+              "typeDetails": {
+                "optionCount": 2
+              }
+            },
+            {
+              "logicalName": "statuscode",
+              "schemaName": "statuscode",
+              "attributeType": "Status",
+              "attributeTypeName": "StatusType",
+              "displayName": "Status Reason",
+              "requiredLevel": "None",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": true,
+              "description": "Reason for the status of the Automated",
+              "typeDetails": {
+                "optionCount": 2
+              }
+            },
+            {
+              "logicalName": "taradeh_automatedid",
+              "schemaName": "taradeh_AutomatedId",
+              "attributeType": "Uniqueidentifier",
+              "attributeTypeName": "UniqueidentifierType",
+              "displayName": "Automated",
+              "requiredLevel": "SystemRequired",
+              "isCustomAttribute": false,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": false,
+              "description": "Unique identifier for entity instances",
+              "isPrimaryId": true,
+              "validity": {
+                "isValidForCreate": true,
+                "isValidForUpdate": false,
+                "isValidForRead": true,
+                "isValidForAdvancedFind": true,
+                "isValidForForm": false,
+                "isValidForGrid": false
+              }
+            },
+            {
+              "logicalName": "taradeh_name",
+              "schemaName": "taradeh_Name",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": "Name",
+              "requiredLevel": "ApplicationRequired",
+              "isCustomAttribute": true,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": true,
+              "isPrimaryName": true,
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 850,
+                "isLocalizable": false
+              }
+            },
+            {
+              "logicalName": "taradeh_title",
+              "schemaName": "taradeh_Title",
+              "attributeType": "String",
+              "attributeTypeName": "StringType",
+              "displayName": "Title",
+              "requiredLevel": "None",
+              "isCustomAttribute": true,
+              "isManaged": false,
+              "isLogical": false,
+              "isSecured": false,
+              "isAuditEnabled": true,
+              "typeDetails": {
+                "format": "Text",
+                "maxLength": 100,
+                "isLocalizable": false
+              }
+            }
+          ]
+        },
+        "warnings": [],
+        "errors": []
+      },
+      "forms": {
+        "schemaVersion": 2,
+        "kind": "dataverse-metadata",
+        "facet": "forms",
+        "scope": {
+          "mode": "entity",
+          "entity": "taradeh_automated"
+        },
+        "fetchedAt": "2026-09-10T10:36:05Z",
+        "status": "ok",
+        "exists": true,
+        "httpStatus": 200,
+        "data": {
+          "forms": [
+            {
+              "formId": "f363c702-edac-f111-aaab-0022480a1382",
+              "name": "Automated form",
+              "type": "Main",
+              "formActivationState": "Active",
+              "description": "A form for this entity."
+            },
+            {
+              "formId": "3728d215-3602-4aa2-94af-7596db3c7d9b",
+              "name": "Information",
+              "type": "QuickViewForm",
+              "formActivationState": "Active",
+              "description": null
+            },
+            {
+              "formId": "7020ddeb-7dc0-4c99-991b-cd49fa2fe7ae",
+              "name": "Information",
+              "type": "Card",
+              "formActivationState": "Active",
+              "description": "A card form for this entity."
+            },
+            {
+              "formId": "9df0cff1-aeb8-417e-909c-e78cace30668",
+              "name": "Information",
+              "type": "Main",
+              "formActivationState": "Active",
+              "description": "A form for this entity."
+            }
+          ],
+          "formUsage": {
+            "libraries": [],
+            "handlers": [],
+            "controls": []
+          }
+        },
+        "warnings": [],
+        "errors": []
+      },
+      "plugins": {
+        "schemaVersion": 2,
+        "kind": "dataverse-metadata",
+        "facet": "plugins",
+        "scope": {
+          "mode": "entity",
+          "entity": "taradeh_automated"
+        },
+        "fetchedAt": "2026-09-10T10:36:46Z",
+        "status": "ok",
+        "exists": true,
+        "httpStatus": 200,
+        "data": {
+          "stepsByMessage": {
+            "Archive": [
+              {
+                "stepId": "be40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "Archive",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "Assign": [
+              {
+                "stepId": "b840f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "Assign",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>Assign</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumSecurityPrincipal(Assignee)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "BulkArchive": [
+              {
+                "stepId": "bf40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "BulkArchive",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "BulkRetain": [
+              {
+                "stepId": "c440f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "BulkRetain",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "Create": [
+              {
+                "stepId": "a140f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "Create",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>Create</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>id</Name><Value>MonikerToId(return-value)</Value><ClrFormatter>System.Guid</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreatable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              },
+              {
+                "stepId": "a240f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "Create",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DoCreate</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>id</Name><Value>MonikerToId(return-value)</Value><ClrFormatter>System.Guid</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreatable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "CreateMultiple": [
+              {
+                "stepId": "aa40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "CreateMultiple",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>CreateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>Ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              },
+              {
+                "stepId": "ab40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "CreateMultiple",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DoCreateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>Ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "CreateMultipleLegacy": [
+              {
+                "stepId": "ac40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "CreateMultipleLegacy",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>CreateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              },
+              {
+                "stepId": "ad40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "CreateMultipleLegacy",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DoCreateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "Delete": [
+              {
+                "stepId": "a340f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "Delete",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>Delete</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IDeletable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              },
+              {
+                "stepId": "a440f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "Delete",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DoDelete</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IDeletable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "DeleteMultiple": [
+              {
+                "stepId": "b240f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "DeleteMultiple",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DeleteMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IDeleteMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              },
+              {
+                "stepId": "b340f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "DeleteMultiple",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DoDeleteMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IDeleteMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "GrantAccess": [
+              {
+                "stepId": "b940f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "GrantAccess",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>GrantAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumPrincipalAccess(PrincipalAccess)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "IsValidStateTransition": [
+              {
+                "stepId": "b540f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "IsValidStateTransition",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>IsValidStateTransitionStatus</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Entity</Name></Input><Input><Name>StateValue(Entity,NewState)</Name></Input><Input><Name>NewStatus</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IStateful,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "ModifyAccess": [
+              {
+                "stepId": "ba40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "ModifyAccess",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>ModifyAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumPrincipalAccess(PrincipalAccess)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "PurgeArchivedContent": [
+              {
+                "stepId": "c140f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "PurgeArchivedContent",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "PurgeRetainedContent": [
+              {
+                "stepId": "c640f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "PurgeRetainedContent",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "Retain": [
+              {
+                "stepId": "c240f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "Retain",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "Retrieve": [
+              {
+                "stepId": "a540f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "Retrieve",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>Retrieve</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>MonikerColumnSetRelatedEntitiesQueryToEntityExpression(Target,columnset,RelatedEntitiesQuery)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>BusinessEntity</Name><Value>return-value</Value><Formatter>Entity</Formatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IRetrievable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "RetrieveMultiple": [
+              {
+                "stepId": "a640f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "RetrieveMultiple",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>RetrieveMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Query</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>BusinessEntityCollection</Name><Value>return-value</Value><Formatter>EntityCollection</Formatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IRetrievable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "RetrievePrincipalAccess": [
+              {
+                "stepId": "bb40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "RetrievePrincipalAccess",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>RetrievePrincipalAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumSecurityPrincipal(principal)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>AccessRights</Name><Value>return-value</Value><ClrFormatter>Microsoft.Crm.Sdk.AccessRights,Microsoft.Crm.Sdk</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "RetrieveSharedPrincipalsAndAccess": [
+              {
+                "stepId": "bd40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "RetrieveSharedPrincipalsAndAccess",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>RetrieveSharedPrincipalsAndAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>PrincipalAccesses</Name><Value>PrincipalAccessArrayToEnum(return-value)</Value><ClrFormatter>Microsoft.Crm.Sdk.PrincipalAccess[],Microsoft.Crm.Sdk</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "RevokeAccess": [
+              {
+                "stepId": "bc40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "RevokeAccess",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>RevokeAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumSecurityPrincipal(Revokee)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "RollbackRetain": [
+              {
+                "stepId": "c340f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "RollbackRetain",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "SetState": [
+              {
+                "stepId": "b440f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "SetState",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>SetStateStatus</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>EntityMoniker</Name></Input><Input><Name>StateValue(EntityMoniker,state)</Name></Input><Input><Name>status</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IStateful,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "SetStateDynamicEntity": [
+              {
+                "stepId": "b640f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "SetStateDynamicEntity",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>SetStateStatus</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>EntityMoniker</Name></Input><Input><Name>StateValue(EntityMoniker,State)</Name></Input><Input><Name>status</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>IsValid</Name><Value>return-value</Value><ClrFormatter>System.Boolean</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IStateful,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "Update": [
+              {
+                "stepId": "a740f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "Update",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>Update</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdatable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              },
+              {
+                "stepId": "a940f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "Update",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DoUpdate</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>InternalSharedVariables(string:Filter)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdatable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "UpdateMultiple": [
+              {
+                "stepId": "ae40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "UpdateMultiple",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>UpdateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              },
+              {
+                "stepId": "af40f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "UpdateMultiple",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DoUpdateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "UpdateMultipleLegacy": [
+              {
+                "stepId": "b040f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "UpdateMultipleLegacy",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>UpdateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              },
+              {
+                "stepId": "b140f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "ObjectModel Implementation",
+                "messageName": "UpdateMultipleLegacy",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": "<MethodInfo><MethodName>DoUpdateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                  "assemblyName": "Microsoft.Crm.ObjectModel",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.Crm.ObjectModel",
+                  "version": "9.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "ValidateArchiveConfig": [
+              {
+                "stepId": "c040f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "ValidateArchiveConfig",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ],
+            "ValidateRetentionConfig": [
+              {
+                "stepId": "c540f03e-00ac-f111-aaac-00224803bcb3",
+                "stepName": "External plug-in implementation",
+                "messageName": "ValidateRetentionConfig",
+                "stage": "30",
+                "mode": "Sync",
+                "rank": 0,
+                "stateCode": "Enabled",
+                "filteringAttributes": [],
+                "configuration": null,
+                "description": null,
+                "pluginType": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+                  "typeName": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+                  "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                  "isCustomizable": null
+                },
+                "assembly": {
+                  "name": "Microsoft.CDS.DataArchival.Plugins",
+                  "version": "1.0.0.0",
+                  "isolationMode": "None",
+                  "isManaged": true
+                },
+                "images": []
+              }
+            ]
+          },
+          "assemblies": [
+            {
+              "name": "Microsoft.CDS.DataArchival.Plugins",
+              "version": "1.0.0.0",
+              "isolationMode": "None",
+              "isManaged": true
+            },
+            {
+              "name": "Microsoft.Crm.ObjectModel",
+              "version": "9.0.0.0",
+              "isolationMode": "None",
+              "isManaged": true
+            }
+          ],
+          "pluginTypes": [
+            {
+              "name": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+              "typeName": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+              "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+              "isCustomizable": null
+            },
+            {
+              "name": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+              "typeName": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+              "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+              "isCustomizable": null
+            },
+            {
+              "name": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+              "typeName": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+              "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+              "isCustomizable": null
+            },
+            {
+              "name": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+              "typeName": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+              "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+              "isCustomizable": null
+            },
+            {
+              "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+              "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+              "assemblyName": "Microsoft.Crm.ObjectModel",
+              "isCustomizable": null
+            }
+          ],
+          "steps": [
+            {
+              "stepId": "be40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "Archive",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "bf40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "BulkArchive",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "c040f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "ValidateArchiveConfig",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "c140f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "PurgeArchivedContent",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "c240f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "Retain",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "c340f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "RollbackRetain",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.ArchivePlugin",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "c440f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "BulkRetain",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.BulkArchivePlugin",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "c540f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "ValidateRetentionConfig",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.ValidateArchiveConfigDataDefaultPlugin",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "c640f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "External plug-in implementation",
+              "messageName": "PurgeRetainedContent",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": null,
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+                "typeName": "Microsoft.CDS.DataArchival.Plugins.PurgeArchivedContent",
+                "assemblyName": "Microsoft.CDS.DataArchival.Plugins",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.CDS.DataArchival.Plugins",
+                "version": "1.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "a140f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "Create",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>Create</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>id</Name><Value>MonikerToId(return-value)</Value><ClrFormatter>System.Guid</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreatable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "a240f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "Create",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DoCreate</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>id</Name><Value>MonikerToId(return-value)</Value><ClrFormatter>System.Guid</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreatable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "a340f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "Delete",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>Delete</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IDeletable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "a440f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "Delete",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DoDelete</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IDeletable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "a540f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "Retrieve",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>Retrieve</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>MonikerColumnSetRelatedEntitiesQueryToEntityExpression(Target,columnset,RelatedEntitiesQuery)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>BusinessEntity</Name><Value>return-value</Value><Formatter>Entity</Formatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IRetrievable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "a640f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "RetrieveMultiple",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>RetrieveMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Query</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>BusinessEntityCollection</Name><Value>return-value</Value><Formatter>EntityCollection</Formatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IRetrievable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "a740f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "Update",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>Update</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdatable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "a940f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "Update",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DoUpdate</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>InternalSharedVariables(string:Filter)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdatable,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "aa40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "CreateMultiple",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>CreateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>Ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "ab40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "CreateMultiple",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DoCreateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>Ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "ac40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "CreateMultipleLegacy",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>CreateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "ad40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "CreateMultipleLegacy",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DoCreateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.ICreateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "ae40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "UpdateMultiple",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>UpdateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "af40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "UpdateMultiple",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DoUpdateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b040f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "UpdateMultipleLegacy",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>UpdateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b140f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "UpdateMultipleLegacy",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DoUpdateMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>ids</Name><Value>return-value</Value><ClrFormatter>System.Guid[]</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IUpdateMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b240f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "DeleteMultiple",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DeleteMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IDeleteMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b340f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "DeleteMultiple",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>DoDeleteMultiple</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Targets</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IDeleteMultiple,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b440f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "SetState",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>SetStateStatus</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>EntityMoniker</Name></Input><Input><Name>StateValue(EntityMoniker,state)</Name></Input><Input><Name>status</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IStateful,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b540f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "IsValidStateTransition",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>IsValidStateTransitionStatus</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Entity</Name></Input><Input><Name>StateValue(Entity,NewState)</Name></Input><Input><Name>NewStatus</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IStateful,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b640f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "SetStateDynamicEntity",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>SetStateStatus</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>EntityMoniker</Name></Input><Input><Name>StateValue(EntityMoniker,State)</Name></Input><Input><Name>status</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>IsValid</Name><Value>return-value</Value><ClrFormatter>System.Boolean</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IStateful,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b840f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "Assign",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>Assign</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumSecurityPrincipal(Assignee)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "b940f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "GrantAccess",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>GrantAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumPrincipalAccess(PrincipalAccess)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "ba40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "ModifyAccess",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>ModifyAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumPrincipalAccess(PrincipalAccess)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "bb40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "RetrievePrincipalAccess",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>RetrievePrincipalAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumSecurityPrincipal(principal)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>AccessRights</Name><Value>return-value</Value><ClrFormatter>Microsoft.Crm.Sdk.AccessRights,Microsoft.Crm.Sdk</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "bc40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "RevokeAccess",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>RevokeAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>EnumSecurityPrincipal(Revokee)</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            },
+            {
+              "stepId": "bd40f03e-00ac-f111-aaac-00224803bcb3",
+              "stepName": "ObjectModel Implementation",
+              "messageName": "RetrieveSharedPrincipalsAndAccess",
+              "stage": "30",
+              "mode": "Sync",
+              "rank": 0,
+              "stateCode": "Enabled",
+              "filteringAttributes": [],
+              "configuration": "<MethodInfo><MethodName>RetrieveSharedPrincipalsAndAccess</MethodName><DeclaringType>Microsoft.Crm.ObjectModel.CustomBusinessEntityService,Microsoft.Crm.ObjectModel</DeclaringType><InputMappings><Input><Name>Target</Name></Input><Input><Name>ExecutionContext()</Name></Input></InputMappings><OutputMappings><Field><Name>PrincipalAccesses</Name><Value>PrincipalAccessArrayToEnum(return-value)</Value><ClrFormatter>Microsoft.Crm.Sdk.PrincipalAccess[],Microsoft.Crm.Sdk</ClrFormatter></Field></OutputMappings><Interface>Microsoft.Crm.Sdk.IOwned,Microsoft.Crm.ObjectModel</Interface></MethodInfo>",
+              "description": null,
+              "pluginType": {
+                "name": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "typeName": "Microsoft.Crm.Extensibility.InternalOperationPlugin",
+                "assemblyName": "Microsoft.Crm.ObjectModel",
+                "isCustomizable": null
+              },
+              "assembly": {
+                "name": "Microsoft.Crm.ObjectModel",
+                "version": "9.0.0.0",
+                "isolationMode": "None",
+                "isManaged": true
+              },
+              "images": []
+            }
+          ],
+          "images": []
+        },
+        "warnings": [],
+        "errors": []
+      },
+      "processes": {
+        "schemaVersion": 2,
+        "kind": "dataverse-metadata",
+        "facet": "processes",
+        "scope": {
+          "mode": "entity",
+          "entity": "taradeh_automated"
+        },
+        "fetchedAt": "2026-09-10T10:37:08Z",
+        "status": "ok",
+        "exists": true,
+        "httpStatus": 200,
+        "data": {
+          "actions": [],
+          "businessRules": [],
+          "flows": [],
+          "classicWorkflows": [],
+          "businessProcessFlows": []
+        },
+        "warnings": [
+          "Cloud Power Automate flows that are not solution-aware are invisible via the Web API."
+        ],
+        "errors": []
+      },
+      "web-resources": {
+        "schemaVersion": 2,
+        "kind": "dataverse-metadata",
+        "facet": "web-resources",
+        "scope": {
+          "mode": "entity",
+          "entity": "taradeh_automated"
+        },
+        "fetchedAt": "2026-09-10T10:37:24Z",
+        "status": "ok",
+        "exists": true,
+        "httpStatus": 200,
+        "data": {
+          "webResources": []
+        },
+        "warnings": [
+          "Ribbon command bindings are not inspected.",
+          "PCF controls are not included."
+        ],
+        "errors": []
+      }
+    },
+    "dependencies": {},
+    "summary": {
+      "requestedCount": 5,
+      "resolvedCount": 5,
+      "implicitCount": 0,
+      "omittedCount": 10,
+      "okCount": 5,
+      "blockedCount": 0,
+      "missingCount": 0,
+      "entityCount": 0
+    }
+  },
+  "warnings": [
+    "Ribbon command bindings are not inspected.",
+    "PCF controls are not included.",
+    "Cloud Power Automate flows that are not solution-aware are invisible via the Web API."
+  ],
+  "errors": []
+}
