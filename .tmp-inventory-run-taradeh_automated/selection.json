@@ -1,0 +1,75 @@
+{
+  "selection": {
+    "requested": [
+      "entity",
+      "forms",
+      "web-resources",
+      "plugins",
+      "processes"
+    ],
+    "resolved": [
+      "entity",
+      "forms",
+      "plugins",
+      "processes",
+      "web-resources"
+    ],
+    "implicit": [],
+    "omitted": [
+      "apps",
+      "charts",
+      "custom-apis",
+      "dashboards",
+      "keys",
+      "optionsets",
+      "privileges",
+      "relationships",
+      "service-endpoints",
+      "status-transitions"
+    ]
+  },
+  "dispatch": [
+    {
+      "facet": "entity",
+      "skill": "dataverse-metadata-entity",
+      "required": true,
+      "implicit": false,
+      "probe": true,
+      "fanOut": false
+    },
+    {
+      "facet": "forms",
+      "skill": "dataverse-metadata-forms",
+      "required": true,
+      "implicit": false,
+      "probe": false,
+      "fanOut": false
+    },
+    {
+      "facet": "plugins",
+      "skill": "dataverse-metadata-plugins",
+      "required": true,
+      "implicit": false,
+      "probe": false,
+      "fanOut": false
+    },
+    {
+      "facet": "processes",
+      "skill": "dataverse-metadata-processes",
+      "required": true,
+      "implicit": false,
+      "probe": false,
+      "fanOut": false
+    },
+    {
+      "facet": "web-resources",
+      "skill": "dataverse-metadata-web-resources",
+      "required": true,
+      "implicit": false,
+      "probe": false,
+      "fanOut": false
+    }
+  ],
+  "includeFormUsage": true,
+  "includeImplicitFacets": false
+}

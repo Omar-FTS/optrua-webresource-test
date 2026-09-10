@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "kind": "dataverse-metadata",
+  "facet": "plugins",
+  "scope": {
+    "mode": "entity",
+    "entity": "taradeh_automated"
+  },
+  "fetchedAt": "2026-09-10T18:21:48Z",
+  "status": "ok",
+  "exists": true,
+  "httpStatus": 200,
+  "data": {
+    "stepCount": 0,
+    "steps": [],
+    "platformStepCount": 36,
+    "note": "Query against sdkmessageprocessingsteps filtered by this entity's 28 sdkmessagefilter ids returned 36 rows, all named 'ObjectModel Implementation' or 'External plug-in implementation' at stage 30 (MainOperation) with no plugintypeid/assembly resolvable as a customer-registered plugin. These are core Dataverse platform pipeline steps present for every entity's standard message pipeline, not customer/ISV-registered plugins. No custom plugin steps are registered against taradeh_automated."
+  },
+  "warnings": [],
+  "errors": []
+}

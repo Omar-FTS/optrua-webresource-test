@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "kind": "dataverse-metadata",
+  "facet": "forms",
+  "scope": {
+    "mode": "entity",
+    "entity": "taradeh_automated"
+  },
+  "fetchedAt": "2026-09-10T18:21:48Z",
+  "status": "ok",
+  "exists": true,
+  "httpStatus": 200,
+  "data": {
+    "formCount": 4,
+    "forms": [
+      {
+        "formId": "f363c702-edac-f111-aaab-0022480a1382",
+        "name": "Automated form",
+        "type": 2,
+        "typeName": "Main",
+        "hasLibraries": true,
+        "libraries": [
+          "taradeh_automated_main_operations.js"
+        ],
+        "hasEvents": true,
+        "events": [
+          {
+            "event": "onload",
+            "eventActive": false,
+            "handlers": [
+              {
+                "functionName": "Orgb788707aAutomatedSdk.formOnLoad",
+                "libraryName": "taradeh_automated_main_operations.js",
+                "enabled": true,
+                "active": false
+              }
+            ]
+          }
+        ],
+        "displayConditions": {
+          "order": 1,
+          "fallbackForm": true,
+          "roleIds": [
+            "c8c36e05-24a9-f111-aaac-6045bd035158",
+            "19c86e05-24a9-f111-aaac-6045bd035158"
+          ]
+        },
+        "fields": [
+          "taradeh_name",
+          "taradeh_title",
+          "ownerid"
+        ]
+      },
+      {
+        "formId": "3728d215-3602-4aa2-94af-7596db3c7d9b",
+        "name": "Information",
+        "type": 6,
+        "typeName": "Dialog",
+        "hasLibraries": false,
+        "libraries": [],
+        "hasEvents": false,
+        "events": [],
+        "displayConditions": null,
+        "fields": [
+          "taradeh_name",
+          "ownerid"
+        ]
+      },
+      {
+        "formId": "7020ddeb-7dc0-4c99-991b-cd49fa2fe7ae",
+        "name": "Information",
+        "type": 11,
+        "typeName": "Card",
+        "hasLibraries": false,
+        "libraries": [],
+        "hasEvents": false,
+        "events": [],
+        "displayConditions": null,
+        "fields": [
+          "statuscode",
+          "taradeh_name",
+          "ownerid",
+          "createdon"
+        ]
+      },
+      {
+        "formId": "9df0cff1-aeb8-417e-909c-e78cace30668",
+        "name": "Information",
+        "type": 2,
+        "typeName": "Main",
+        "hasLibraries": false,
+        "libraries": [],
+        "hasEvents": false,
+        "events": [],
+        "displayConditions": null,
+        "fields": [
+          "taradeh_name",
+          "ownerid"
+        ]
+      }
+    ],
+    "verification": {
+      "automatedFormHasLibrariesOrEvents": true,
+      "note": "The requirement assumption that 'Automated form' has NO events/Libraries block does NOT hold live: the form has a formLibraries block referencing taradeh_automated_main_operations.js and an onload event with handler Orgb788707aAutomatedSdk.formOnLoad (handler enabled=true, but the onload <event> element itself is marked active=false, i.e. disabled in the form designer).",
+      "displayConditionsRoleIdsMatchExpected": true,
+      "expectedRoleIds": [
+        "c8c36e05-24a9-f111-aaac-6045bd035158 (System Administrator)",
+        "19c86e05-24a9-f111-aaac-6045bd035158 (System Customizer)"
+      ]
+    }
+  },
+  "warnings": [
+    "Requirement spec assumption of a from-scratch form with no events/libraries was contradicted by live FormXml; see data.verification.note."
+  ],
+  "errors": []
+}

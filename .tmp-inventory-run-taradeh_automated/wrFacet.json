@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "kind": "dataverse-metadata",
+  "facet": "web-resources",
+  "scope": {
+    "mode": "entity",
+    "entity": "taradeh_automated"
+  },
+  "fetchedAt": "2026-09-10T18:21:48Z",
+  "status": "ok",
+  "exists": true,
+  "httpStatus": 200,
+  "data": {
+    "webResourceCount": 1,
+    "webResources": [
+      {
+        "webResourceId": "8073a323-2fad-f111-aaab-0022480a1382",
+        "name": "taradeh_automated_main_operations.js",
+        "displayName": "taradeh_automated_main_operations.js",
+        "webResourceType": 3,
+        "webResourceTypeName": "JScript",
+        "isManaged": false,
+        "isCustomizable": true,
+        "usedByForms": [
+          {
+            "formId": "f363c702-edac-f111-aaab-0022480a1382",
+            "formName": "Automated form",
+            "event": "onload"
+          }
+        ]
+      }
+    ],
+    "note": "A narrow search (contains(name,'taradeh_automated')) returned exactly this one JScript resource, already wired to the onload event of 'Automated form'. A broader search (contains(name,'automated')) returned 5 additional unrelated managed/OOB resources (msdyn_* Sales Sequences / journey-designer assets) that reference the word 'automated' but are not associated with the taradeh_automated table or its forms; these were excluded."
+  },
+  "warnings": [
+    "Live data contradicts the requirement spec's expectation of zero web resources for this entity: one custom JScript web resource exists and is wired to the Automated form's onload event."
+  ],
+  "errors": []
+}

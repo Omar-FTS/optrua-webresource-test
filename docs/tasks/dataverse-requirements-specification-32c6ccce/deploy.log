@@ -1,0 +1,24 @@
+🔎 Pre-flight form taradeh_automated/Automated form: resolved (f363c702-edac-f111-aaab-0022480a1382)
+   Pre-flight taradeh_automated/Automated form: form onload -> Orgb788707aAutomatedSdk.formOnLoad: True
+📂 Deploying 1 resource(s).
+
+📦 Deploying: taradeh_automated_main_operations.js
+✅ Updated: taradeh_automated_main_operations.js
+🗂️  Solution found: "webresourceAutomatedForm" (40b9a5fe-2cad-f111-aaab-0022480a1382)
+🗂️  Web resource already in solution — skipping.
+🚀 Published!
+✅ Using pre-flight form: "Automated form" on table taradeh_automated (f363c702-edac-f111-aaab-0022480a1382)
+✔️  Library already registered: taradeh_automated_main_operations.js
+✔️  Already registered: onload → Orgb788707aAutomatedSdk.formOnLoad
+
+📝 Patching form XML...
+✅ Form patched.
+🗂️  Web resource already in solution — skipping.
+🗂️  Entity "taradeh_automated" already in solution — skipping.
+🗂️  Form already in solution — skipping.
+🚀 Publishing form + web resource...
+🚀 Published!
+
+📄 Result written to C:\Users\Omar Taladeh\.adw\projects\optrua-webresource-test-5f4e2873\trees\32c6ccce\docs\tasks\dataverse-requirements-specification-32c6ccce\deploy-result.json
+
+✅ DEPLOYED

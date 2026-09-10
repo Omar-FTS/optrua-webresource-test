@@ -1,0 +1,2199 @@
+[
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "MetadataId": "ec0e41bb-9945-4750-8c7f-c07ddc2e5806",
+    "AttributeType": "Lookup",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "createdby",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "CreatedBy",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "LookupType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Unique identifier of the user who created the record.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "9d3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Unique identifier of the user who created the record.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "9d3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Created By",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "9e3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Created By",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "9e3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "cd35ece5-9231-4766-a3c8-192f147bd266",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "createdbyname",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "CreatedByName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "f282a4f9-5b2e-42b3-bab8-8e9a55e2ef49",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "createdbyyominame",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "CreatedByYomiName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+    "MetadataId": "b90d9d28-d2c3-4d0e-a81f-ed93faf7c700",
+    "AttributeType": "DateTime",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "createdon",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "CreatedOn",
+    "IsLogical": false,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "DateTimeType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Date and time when the record was created.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "9b3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Date and time when the record was created.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "9b3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Created On",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "9c3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Created On",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "9c3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "MetadataId": "c326358f-8d52-442f-b2ed-e42fa44d8c87",
+    "AttributeType": "Lookup",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "createdonbehalfby",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "CreatedOnBehalfBy",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "LookupType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Unique identifier of the delegate user who created the record.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "a33e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Unique identifier of the delegate user who created the record.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "a33e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Created By (Delegate)",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "a43e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Created By (Delegate)",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "a43e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "054bccdc-01e0-4933-824a-32e0d2ae7cf1",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "createdonbehalfbyname",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "CreatedOnBehalfByName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "37dc9701-b56b-43c0-a79e-6cf4bba5a669",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "createdonbehalfbyyominame",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "CreatedOnBehalfByYomiName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.IntegerAttributeMetadata",
+    "MetadataId": "9229c705-37b8-4cd1-ace4-1f5bed9eaf8d",
+    "AttributeType": "Integer",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "importsequencenumber",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "ImportSequenceNumber",
+    "IsLogical": false,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "IntegerType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Sequence number of the import that created this record.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "f53e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Sequence number of the import that created this record.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f53e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Import Sequence Number",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "f63e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Import Sequence Number",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f63e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "MetadataId": "0d80455b-054a-42b1-abdb-256b5fda68c6",
+    "AttributeType": "Lookup",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "modifiedby",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "ModifiedBy",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "LookupType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Unique identifier of the user who modified the record.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "a13e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Unique identifier of the user who modified the record.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "a13e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Modified By",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "a23e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Modified By",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "a23e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "b8a95679-94e4-4171-9d39-d42d5f2642ae",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "modifiedbyname",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "ModifiedByName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "8a60c1b1-07d5-407a-921f-3f32db37482e",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "modifiedbyyominame",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "ModifiedByYomiName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+    "MetadataId": "6095797a-8dd5-46b1-b39c-4bb0b18b2b4d",
+    "AttributeType": "DateTime",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "modifiedon",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "ModifiedOn",
+    "IsLogical": false,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "DateTimeType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Date and time when the record was modified.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "9f3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Date and time when the record was modified.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "9f3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Modified On",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "a03e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Modified On",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "a03e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "MetadataId": "8dee4d4d-37b3-4d05-8751-41033b47a1c5",
+    "AttributeType": "Lookup",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "modifiedonbehalfby",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "ModifiedOnBehalfBy",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "LookupType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Unique identifier of the delegate user who modified the record.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "a53e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Unique identifier of the delegate user who modified the record.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "a53e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Modified By (Delegate)",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "a63e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Modified By (Delegate)",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "a63e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "2e9e7bf2-1d3e-41ba-a870-93a4a4708fc1",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "modifiedonbehalfbyname",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "ModifiedOnBehalfByName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "498f3fc6-fd43-4771-8187-055e66a144a7",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "modifiedonbehalfbyyominame",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "ModifiedOnBehalfByYomiName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+    "MetadataId": "1415e8fe-1ec2-4a4f-90e0-d319cf5264a2",
+    "AttributeType": "DateTime",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "overriddencreatedon",
+    "IsValidForForm": false,
+    "IsValidForGrid": true,
+    "SchemaName": "OverriddenCreatedOn",
+    "IsLogical": false,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "DateTimeType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Date and time that the record was migrated.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "f73e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Date and time that the record was migrated.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f73e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Record Created On",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "f83e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Record Created On",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f83e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "MetadataId": "480c57c7-37db-4d9c-bad5-d6b7023affe8",
+    "AttributeType": "Owner",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": true,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "ownerid",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "OwnerId",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "OwnerType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Owner Id",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "bf3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Owner Id",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "bf3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Owner",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "c03e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Owner",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "c03e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "08e08a26-e485-414c-ae6c-f000d35d3a6b",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "owneridname",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "OwnerIdName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Name of the owner",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "c43e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Name of the owner",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "c43e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.EntityNameAttributeMetadata",
+    "MetadataId": "8f751ece-b47b-414a-a998-485a8b00bcb6",
+    "AttributeType": "EntityName",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": true,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "owneridtype",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "OwnerIdType",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "EntityNameType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Owner Id Type",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "c33e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Owner Id Type",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "c33e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "c53e5538-00ac-f111-aaac-00224803bcb3",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "owneridyominame",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "OwnerIdYomiName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Yomi name of the owner",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "c63e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Yomi name of the owner",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "c63e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "MetadataId": "8a68bade-b237-47e2-acb9-884c33b1a4fd",
+    "AttributeType": "Lookup",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "owningbusinessunit",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "OwningBusinessUnit",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "LookupType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Unique identifier for the business unit that owns the record",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "c73e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Unique identifier for the business unit that owns the record",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "c73e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Owning Business Unit",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "c83e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Owning Business Unit",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "c83e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "5e3d377a-e252-40ca-9a5e-a52d8b91aff3",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "owningbusinessunitname",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "OwningBusinessUnitName",
+    "IsLogical": true,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "MetadataId": "06d5cace-6741-4b35-89e1-c6f2d7bfc2f3",
+    "AttributeType": "Lookup",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "owningteam",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "OwningTeam",
+    "IsLogical": true,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "LookupType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Unique identifier for the team that owns the record.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "d03e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Unique identifier for the team that owns the record.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "d03e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Owning Team",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "d13e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Owning Team",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "d13e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+    "MetadataId": "cf67902e-ae41-4d65-a676-de5f0e7c7b7f",
+    "AttributeType": "Lookup",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "owninguser",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "OwningUser",
+    "IsLogical": true,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "LookupType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Unique identifier for the user that owns the record.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "c93e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Unique identifier for the user that owns the record.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "c93e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Owning User",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "ca3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Owning User",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "ca3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StateAttributeMetadata",
+    "MetadataId": "8bf5f152-5474-4430-9cb0-56a48921e0a2",
+    "AttributeType": "State",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": true,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "statecode",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "statecode",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "StateType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Status of the Automated",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "e03e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Status of the Automated",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "e03e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Status",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "e13e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Status",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "e13e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "MetadataId": "1b371a96-a607-4f98-aca3-fd91b787f722",
+    "AttributeType": "Virtual",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "statecodename",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "statecodeName",
+    "IsLogical": true,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "VirtualType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StatusAttributeMetadata",
+    "MetadataId": "70da2712-1f5a-4470-b9cd-0bdd868abd45",
+    "AttributeType": "Status",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": true,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "statuscode",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "statuscode",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "StatusType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Reason for the status of the Automated",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "ea3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Reason for the status of the Automated",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "ea3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Status Reason",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "eb3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Status Reason",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "eb3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "MetadataId": "72962b28-458f-4340-9a27-38ddc51a298c",
+    "AttributeType": "Virtual",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "statuscodename",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "statuscodeName",
+    "IsLogical": true,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "VirtualType"
+    },
+    "Description": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "DisplayName": {
+      "LocalizedLabels": [],
+      "UserLocalizedLabel": null
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "MetadataId": "2356b6b6-02ff-4f5f-b87c-87496d07e282",
+    "AttributeType": "Uniqueidentifier",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": true,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "taradeh_automatedid",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "taradeh_AutomatedId",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "UniqueidentifierType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Unique identifier for entity instances",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "993e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Unique identifier for entity instances",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "993e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Automated",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "9a3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Automated",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "9a3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "SystemRequired",
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "873e5538-00ac-f111-aaac-00224803bcb3",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": true,
+    "IsPrimaryId": false,
+    "IsPrimaryName": true,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": true,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "taradeh_name",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "taradeh_Name",
+    "IsLogical": false,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "b7ad6621-282c-4b09-9b43-d9efc0fc8444",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "b7ad6621-282c-4b09-9b43-d9efc0fc8444",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Name",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "1f61b00f-867f-4276-81fc-c54b6fcdcfdb",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Name",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "1f61b00f-867f-4276-81fc-c54b6fcdcfdb",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "ApplicationRequired",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.StringAttributeMetadata",
+    "MetadataId": "af5515e4-ecac-f111-aaab-0022480a1382",
+    "AttributeType": "String",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": true,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": true,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "taradeh_title",
+    "IsValidForForm": true,
+    "IsValidForGrid": true,
+    "SchemaName": "taradeh_Title",
+    "IsLogical": false,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "StringType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "8579919b-6968-4b71-b8d0-7b95d9057077",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "8579919b-6968-4b71-b8d0-7b95d9057077",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Title",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "f59e4517-6d08-46cf-a862-2c985bc3ad21",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Title",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f59e4517-6d08-46cf-a862-2c985bc3ad21",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.IntegerAttributeMetadata",
+    "MetadataId": "150c6981-6f0e-4732-ac08-b7031999e6fe",
+    "AttributeType": "Integer",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": true,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "timezoneruleversionnumber",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "TimeZoneRuleVersionNumber",
+    "IsLogical": false,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "IntegerType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "For internal use only.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "f93e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "For internal use only.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f93e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Time Zone Rule Version Number",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "fa3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Time Zone Rule Version Number",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "fa3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.IntegerAttributeMetadata",
+    "MetadataId": "ed88453f-b683-49a4-91ad-49484bb46b85",
+    "AttributeType": "Integer",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": true,
+    "IsValidForRead": true,
+    "IsValidForUpdate": true,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "utcconversiontimezonecode",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "UTCConversionTimeZoneCode",
+    "IsLogical": false,
+    "SourceType": 0,
+    "AttributeTypeName": {
+      "Value": "IntegerType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Time zone code that was in use when the record was created.",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "fb3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Time zone code that was in use when the record was created.",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "fb3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "UTC Conversion Time Zone Code",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "fc3e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "UTC Conversion Time Zone Code",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "fc3e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  },
+  {
+    "@odata.type": "#Microsoft.Dynamics.CRM.BigIntAttributeMetadata",
+    "MetadataId": "469ba46f-26d3-4ba9-82a8-be3c25d54dcd",
+    "AttributeType": "BigInt",
+    "DeprecatedVersion": null,
+    "IntroducedVersion": "1.0",
+    "IsCustomAttribute": false,
+    "IsPrimaryId": false,
+    "IsPrimaryName": false,
+    "IsValidForCreate": false,
+    "IsValidForRead": true,
+    "IsValidForUpdate": false,
+    "IsSecured": false,
+    "IsManaged": false,
+    "LogicalName": "versionnumber",
+    "IsValidForForm": false,
+    "IsValidForGrid": false,
+    "SchemaName": "VersionNumber",
+    "IsLogical": false,
+    "SourceType": null,
+    "AttributeTypeName": {
+      "Value": "BigIntType"
+    },
+    "Description": {
+      "LocalizedLabels": [
+        {
+          "Label": "Version Number",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "f33e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Version Number",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f33e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "DisplayName": {
+      "LocalizedLabels": [
+        {
+          "Label": "Version Number",
+          "LanguageCode": 1033,
+          "IsManaged": false,
+          "MetadataId": "f43e5538-00ac-f111-aaac-00224803bcb3",
+          "HasChanged": null
+        }
+      ],
+      "UserLocalizedLabel": {
+        "Label": "Version Number",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f43e5538-00ac-f111-aaac-00224803bcb3",
+        "HasChanged": null
+      }
+    },
+    "IsAuditEnabled": {
+      "Value": false,
+      "CanBeChanged": false,
+      "ManagedPropertyLogicalName": "canmodifyauditsettings"
+    },
+    "IsValidForAdvancedFind": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifysearchsettings"
+    },
+    "RequiredLevel": {
+      "Value": "None",
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+    }
+  }
+]
