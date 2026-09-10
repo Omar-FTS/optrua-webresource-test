@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "kind": "dataverse-metadata",
+  "facet": "processes",
+  "scope": {
+    "mode": "entity",
+    "entity": "taradeh_automated"
+  },
+  "fetchedAt": "2026-09-10T18:21:48Z",
+  "status": "ok",
+  "exists": true,
+  "httpStatus": 200,
+  "data": {
+    "processCount": 0,
+    "processes": []
+  },
+  "warnings": [
+    "Cloud Power Automate flows that are not solution-aware are invisible via the Web API."
+  ],
+  "errors": []
+}

@@ -1,0 +1,229 @@
+{
+  "modifiedbyname": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "b8a95679-94e4-4171-9d39-d42d5f2642ae",
+    "LogicalName": "modifiedbyname",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "modifiedonbehalfbyname": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "2e9e7bf2-1d3e-41ba-a870-93a4a4708fc1",
+    "LogicalName": "modifiedonbehalfbyname",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "statuscode": {
+    "error": "Response status code does not indicate success: 400 (Bad Request)."
+  },
+  "createdonbehalfbyyominame": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "37dc9701-b56b-43c0-a79e-6cf4bba5a669",
+    "LogicalName": "createdonbehalfbyyominame",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "createdby": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.LookupAttributeMetadata(LogicalName,Targets)/$entity",
+    "MetadataId": "ec0e41bb-9945-4750-8c7f-c07ddc2e5806",
+    "LogicalName": "createdby",
+    "Targets": [
+      "systemuser"
+    ]
+  },
+  "owningbusinessunitname": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "5e3d377a-e252-40ca-9a5e-a52d8b91aff3",
+    "LogicalName": "owningbusinessunitname",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "ownerid": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.LookupAttributeMetadata(LogicalName,Targets)/$entity",
+    "MetadataId": "480c57c7-37db-4d9c-bad5-d6b7023affe8",
+    "LogicalName": "ownerid",
+    "Targets": [
+      "systemuser",
+      "team"
+    ]
+  },
+  "statecode": {
+    "error": "Response status code does not indicate success: 400 (Bad Request)."
+  },
+  "owninguser": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.LookupAttributeMetadata(LogicalName,Targets)/$entity",
+    "MetadataId": "cf67902e-ae41-4d65-a676-de5f0e7c7b7f",
+    "LogicalName": "owninguser",
+    "Targets": [
+      "systemuser"
+    ]
+  },
+  "owningteam": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.LookupAttributeMetadata(LogicalName,Targets)/$entity",
+    "MetadataId": "06d5cace-6741-4b35-89e1-c6f2d7bfc2f3",
+    "LogicalName": "owningteam",
+    "Targets": [
+      "team"
+    ]
+  },
+  "createdbyname": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "cd35ece5-9231-4766-a3c8-192f147bd266",
+    "LogicalName": "createdbyname",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "createdonbehalfbyname": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "054bccdc-01e0-4933-824a-32e0d2ae7cf1",
+    "LogicalName": "createdonbehalfbyname",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "modifiedonbehalfby": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.LookupAttributeMetadata(LogicalName,Targets)/$entity",
+    "MetadataId": "8dee4d4d-37b3-4d05-8751-41033b47a1c5",
+    "LogicalName": "modifiedonbehalfby",
+    "Targets": [
+      "systemuser"
+    ]
+  },
+  "owningbusinessunit": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.LookupAttributeMetadata(LogicalName,Targets)/$entity",
+    "MetadataId": "8a68bade-b237-47e2-acb9-884c33b1a4fd",
+    "LogicalName": "owningbusinessunit",
+    "Targets": [
+      "businessunit"
+    ]
+  },
+  "modifiedonbehalfbyyominame": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "498f3fc6-fd43-4771-8187-055e66a144a7",
+    "LogicalName": "modifiedonbehalfbyyominame",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "createdbyyominame": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "f282a4f9-5b2e-42b3-bab8-8e9a55e2ef49",
+    "LogicalName": "createdbyyominame",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "modifiedbyyominame": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "8a60c1b1-07d5-407a-921f-3f32db37482e",
+    "LogicalName": "modifiedbyyominame",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "owneridyominame": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "c53e5538-00ac-f111-aaac-00224803bcb3",
+    "LogicalName": "owneridyominame",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "owneridname": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "08e08a26-e485-414c-ae6c-f000d35d3a6b",
+    "LogicalName": "owneridname",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "taradeh_name": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "873e5538-00ac-f111-aaac-00224803bcb3",
+    "LogicalName": "taradeh_name",
+    "AutoNumberFormat": null,
+    "Format": "Text",
+    "MaxLength": 850,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "createdonbehalfby": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.LookupAttributeMetadata(LogicalName,Targets)/$entity",
+    "MetadataId": "c326358f-8d52-442f-b2ed-e42fa44d8c87",
+    "LogicalName": "createdonbehalfby",
+    "Targets": [
+      "systemuser"
+    ]
+  },
+  "taradeh_title": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.StringAttributeMetadata(LogicalName,Format,FormatName,MaxLength,IsLocalizable,AutoNumberFormat)/$entity",
+    "MetadataId": "af5515e4-ecac-f111-aaab-0022480a1382",
+    "LogicalName": "taradeh_title",
+    "AutoNumberFormat": "",
+    "Format": "Text",
+    "MaxLength": 100,
+    "IsLocalizable": false,
+    "FormatName": {
+      "Value": "Text"
+    }
+  },
+  "modifiedby": {
+    "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions('taradeh_automated')/Attributes/Microsoft.Dynamics.CRM.LookupAttributeMetadata(LogicalName,Targets)/$entity",
+    "MetadataId": "0d80455b-054a-42b1-abdb-256b5fda68c6",
+    "LogicalName": "modifiedby",
+    "Targets": [
+      "systemuser"
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "@odata.context": "https://orgb788707a.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions(LogicalName,SchemaName,EntitySetName,LogicalCollectionName,DisplayName,DisplayCollectionName,Description,PrimaryIdAttribute,PrimaryNameAttribute,PrimaryImageAttribute,ObjectTypeCode,OwnershipType,IsActivity,IsActivityParty,IsCustomEntity,IsManaged,IsIntersect,IsBPFEntity,IsLogicalEntity,IsAuditEnabled,IsValidForAdvancedFind,IsValidForQueue,ChangeTrackingEnabled,IsRetrieveAuditEnabled,IsDuplicateDetectionEnabled,IsCustomizable,IntroducedVersion)/$entity",
+  "MetadataId": "863e5538-00ac-f111-aaac-00224803bcb3",
+  "IsBPFEntity": false,
+  "IsActivity": false,
+  "IsActivityParty": false,
+  "IsRetrieveAuditEnabled": false,
+  "IsCustomEntity": true,
+  "ChangeTrackingEnabled": false,
+  "IsIntersect": false,
+  "IsManaged": false,
+  "IsValidForAdvancedFind": true,
+  "LogicalName": "taradeh_automated",
+  "ObjectTypeCode": 11488,
+  "OwnershipType": "UserOwned",
+  "PrimaryNameAttribute": "taradeh_name",
+  "PrimaryImageAttribute": null,
+  "PrimaryIdAttribute": "taradeh_automatedid",
+  "SchemaName": "taradeh_Automated",
+  "IntroducedVersion": "1.0",
+  "LogicalCollectionName": "taradeh_automateds",
+  "EntitySetName": "taradeh_automateds",
+  "IsLogicalEntity": false,
+  "Description": {
+    "LocalizedLabels": [
+      {
+        "Label": "",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "f946b9fe-80fd-4c1a-bbbf-c679fbf65f42",
+        "HasChanged": null
+      }
+    ],
+    "UserLocalizedLabel": {
+      "Label": "",
+      "LanguageCode": 1033,
+      "IsManaged": false,
+      "MetadataId": "f946b9fe-80fd-4c1a-bbbf-c679fbf65f42",
+      "HasChanged": null
+    }
+  },
+  "DisplayCollectionName": {
+    "LocalizedLabels": [
+      {
+        "Label": "Automateds",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "602a52b1-8a05-4706-8245-a445f34824bf",
+        "HasChanged": null
+      }
+    ],
+    "UserLocalizedLabel": {
+      "Label": "Automateds",
+      "LanguageCode": 1033,
+      "IsManaged": false,
+      "MetadataId": "602a52b1-8a05-4706-8245-a445f34824bf",
+      "HasChanged": null
+    }
+  },
+  "DisplayName": {
+    "LocalizedLabels": [
+      {
+        "Label": "Automated",
+        "LanguageCode": 1033,
+        "IsManaged": false,
+        "MetadataId": "581a6d94-6fdb-44bf-9a1c-b21fcdaa690f",
+        "HasChanged": null
+      }
+    ],
+    "UserLocalizedLabel": {
+      "Label": "Automated",
+      "LanguageCode": 1033,
+      "IsManaged": false,
+      "MetadataId": "581a6d94-6fdb-44bf-9a1c-b21fcdaa690f",
+      "HasChanged": null
+    }
+  },
+  "IsAuditEnabled": {
+    "Value": false,
+    "CanBeChanged": true,
+    "ManagedPropertyLogicalName": "canmodifyauditsettings"
+  },
+  "IsValidForQueue": {
+    "Value": false,
+    "CanBeChanged": true,
+    "ManagedPropertyLogicalName": "canmodifyqueuesettings"
+  },
+  "IsCustomizable": {
+    "Value": true,
+    "CanBeChanged": true,
+    "ManagedPropertyLogicalName": "iscustomizable"
+  },
+  "IsDuplicateDetectionEnabled": {
+    "Value": true,
+    "CanBeChanged": true,
+    "ManagedPropertyLogicalName": "canmodifyduplicatedetectionsettings"
+  }
+}

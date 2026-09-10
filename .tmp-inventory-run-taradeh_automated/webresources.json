@@ -1,0 +1,80 @@
+[
+  {
+    "@odata.etag": "W/\"7901296\"",
+    "displayname": "taradeh_automated_main_operations.js",
+    "webresourcetype": 3,
+    "ismanaged": false,
+    "name": "taradeh_automated_main_operations.js",
+    "webresourceid": "8073a323-2fad-f111-aaab-0022480a1382",
+    "iscustomizable": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "iscustomizableanddeletable"
+    }
+  },
+  {
+    "@odata.etag": "W/\"7533370\"",
+    "displayname": "msdyn_automatedMessagesFormChanges.js",
+    "webresourcetype": 3,
+    "ismanaged": true,
+    "name": "msdyn_automatedMessagesFormChanges.js",
+    "webresourceid": "a1b2c3d4-e5f6-7890-abcd-123456789012",
+    "iscustomizable": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "iscustomizableanddeletable"
+    }
+  },
+  {
+    "@odata.etag": "W/\"7587493\"",
+    "displayname": "SalesSequences/SequenceAnalytics/msdyn_SequenceAnalytics.saAutomatedEmailAction.msdynmkt_InsightsConfig.json",
+    "webresourcetype": 3,
+    "ismanaged": true,
+    "name": "SalesSequences/SequenceAnalytics/msdyn_SequenceAnalytics.saAutomatedEmailAction.msdynmkt_InsightsConfig.json",
+    "webresourceid": "9da95e2c-7697-4ec9-9549-582fd660ea8d",
+    "iscustomizable": {
+      "Value": false,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "iscustomizableanddeletable"
+    }
+  },
+  {
+    "@odata.etag": "W/\"7643674\"",
+    "displayname": "Add Another Automated Message Button",
+    "webresourcetype": 1,
+    "ismanaged": true,
+    "name": "msdyn_addAnotherAutomatedMessageButton.html",
+    "webresourceid": "f8e7d6c5-b4a3-9281-7065-a1b2c3d4e5f6",
+    "iscustomizable": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "iscustomizableanddeletable"
+    }
+  },
+  {
+    "@odata.etag": "W/\"7708586\"",
+    "displayname": "Automated email action",
+    "webresourcetype": 4,
+    "ismanaged": true,
+    "name": "SalesCadence/SequenceSteps/msdyn_saAutomatedEmailAction.DynamicsCXPJourneyDesignerChannel.json",
+    "webresourceid": "30b35654-c7b8-47db-9ae0-f5e703294ca6",
+    "iscustomizable": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "iscustomizableanddeletable"
+    }
+  },
+  {
+    "@odata.etag": "W/\"7708579\"",
+    "displayname": "Automated sms action",
+    "webresourcetype": 4,
+    "ismanaged": true,
+    "name": "msdyn_SalesOmniChannel/SequenceSteps/msdyn_saAutomatedSmsAction.DynamicsCXPJourneyDesignerChannel.json",
+    "webresourceid": "30b35654-c7b8-47db-9ae0-f5e703294db7",
+    "iscustomizable": {
+      "Value": true,
+      "CanBeChanged": true,
+      "ManagedPropertyLogicalName": "iscustomizableanddeletable"
+    }
+  }
+]

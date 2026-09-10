@@ -1,0 +1,41 @@
+version: "1"
+webResources:
+  - name: taradeh_automated_main_operations.js
+    type: JavaScript
+    displayName: taradeh_automated_main_operations.js
+    description: >
+      Automated form onload handler. Defaults taradeh_title to the literal "order:" when a
+      new taradeh_automated record is created; leaves taradeh_title untouched on every other
+      form load.
+    sourceFile: src/Resources/scripts/taradeh_automated_main_operations.js
+    origin: existing
+    removes: []
+    targetForms:
+      - entity: taradeh_automated
+        formName: Automated form
+        formType: Main
+    events:
+      - control: form
+        name: onload
+        handler: Orgb788707aAutomatedSdk.formOnLoad
+        passExecutionContext: true
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.ui.getFormType
+      - formContext.getAttribute
+context:
+  reuseRefs:
+    - taradeh_automated.json#data.facets.web-resources.data.webResources[0]
+  notes: >
+    Live inventory contradicts the requirement's own grounding: taradeh_automated_main_operations.js
+    is already deployed and already wired to Automated form's onload event with handler
+    Orgb788707aAutomatedSdk.formOnLoad (handler enabled="true"). Its deployed content was
+    downloaded and read directly (not inferred from registration state): formOnLoad calls a
+    private defaultTitleOnCreate(formContext) that returns early unless
+    formContext.ui.getFormType() === 1, then sets taradeh_title to the exact literal "order:" via
+    formContext.getAttribute("taradeh_title")?.setValue("order:"). This already satisfies FR-1,
+    FR-2, and BD-2/BD-3 exactly as written; no code change is planned. The unresolved gap is
+    FR-3/AC-3: the onload <event> element itself is active="false" in live FormXml, so the
+    already-correct handler never runs. This spec and event-registrations.yaml carry the
+    onload/form/Orgb788707aAutomatedSdk.formOnLoad registration unchanged so the deploy step
+    re-patches and activates it (active="true") without altering the resource's content.
