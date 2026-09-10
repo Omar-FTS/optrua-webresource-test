@@ -1,0 +1,31 @@
+version: "1"
+webResources:
+  - name: taradeh_automated_main_operations.js
+    type: JavaScript
+    displayName: Automated form script
+    description: >-
+      Form OnLoad behavior for the taradeh_automated "Automated form": on a
+      brand-new record only, defaults taradeh_title to the literal "order:".
+    sourceFile: src/Resources/scripts/automated-form.js
+    origin: new
+    removes: []
+    targetForms:
+      - entity: taradeh_automated
+        formName: Automated form
+        formType: Main
+    events:
+      - control: form
+        name: onload
+        handler: Orgb788707aAutomatedSdk.formOnLoad
+        passExecutionContext: true
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.ui.getFormType
+      - formContext.getAttribute
+    context:
+      reuseRefs: []
+      notes: >-
+        No web resource or handler exists on taradeh_automated today
+        (data.facets.web-resources.data.webResources is empty and
+        data.facets.forms.data.formUsage.libraries/handlers are both empty for
+        "Automated form"), so this is a from-scratch build, not an extension.

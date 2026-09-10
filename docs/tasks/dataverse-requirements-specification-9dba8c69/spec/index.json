@@ -1,0 +1,10 @@
+{
+  "publisherPrefix": "taradeh",
+  "webResources": [
+    {
+      "name": "taradeh_automated_main_operations.js",
+      "spec": "automated-onload-orgb788707a.yaml",
+      "sourceFile": "src/Resources/scripts/automated-form.js"
+    }
+  ]
+}
