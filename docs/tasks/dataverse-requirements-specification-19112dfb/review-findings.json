@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "review_summary": "No blocking findings on either axis. Standards axis clean against the resolved okfs/webresource bundle; Spec axis clean against start-content_source.json's FR/AC/BD/SEC/MIG items. One candidate spec finding (missing explicit active flag in event-registrations.yaml) was confidence-scored at 0/100 and dropped as a schema/tool-boundary characteristic already disclosed by plan.md, not a defect in this diff.",
+  "blocker_count": 0,
+  "review_issues": []
+}

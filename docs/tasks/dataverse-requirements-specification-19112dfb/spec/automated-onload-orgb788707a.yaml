@@ -1,0 +1,41 @@
+version: "1"
+webResources:
+  - name: taradeh_automated_main_operations.js
+    type: JavaScript
+    displayName: taradeh_automated_main_operations.js
+    description: >
+      Automated form onload handler. Sets taradeh_title to the literal "order:" when the
+      form loads for a new (create) taradeh_automated record; leaves taradeh_title
+      untouched on every other form load. Already deployed in the target environment with
+      this exact behavior; the form's onload event node is currently inactive
+      (active="false"), so the handler is registered but does not fire.
+    sourceFile: src/Resources/scripts/taradeh_automated_main_operations.js
+    origin: existing
+    removes: []
+    targetForms:
+      - entity: taradeh_automated
+        formName: Automated form
+        formType: Main
+    events:
+      - control: form
+        name: onload
+        handler: Orgb788707aAutomatedSdk.formOnLoad
+        passExecutionContext: true
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.ui.getFormType
+      - formContext.getAttribute
+    context:
+      reuseRefs:
+        - taradeh_automated.json#data.facets.web-resources.data.webResources[0]
+        - taradeh_automated.json#data.facets.forms.data.formUsage.handlers[0]
+      notes: >
+        Live probe (GET webresourceset content, GET systemforms formxml) found the resource
+        already deployed and already implementing FR-1/FR-2/BD-2/BD-3 verbatim: the handler
+        checks formContext.ui.getFormType() !== 1 and returns early on any non-create load,
+        otherwise sets taradeh_title to the literal "order:" with no trailing space. No code
+        change is needed. The live FormXml's <events> node for this onload event carries
+        active="false" even though the Handler element is enabled="true", so the handler is
+        wired but does not execute on form load. This spec and the accompanying
+        event-registrations.yaml declare the same onload registration so the deployment step
+        activates it; no new resource, no new handler, and no removed member are introduced.

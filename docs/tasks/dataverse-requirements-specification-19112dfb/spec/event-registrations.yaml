@@ -1,0 +1,14 @@
+version: "1"
+webResources:
+  - name: taradeh_automated_main_operations.js
+    type: JavaScript
+    displayName: taradeh_automated_main_operations.js
+    target:
+      entity: taradeh_automated
+      form: Automated form
+      formType: Main
+    registrations:
+      - control: form
+        event: onload
+        handler: Orgb788707aAutomatedSdk.formOnLoad
+        passExecutionContext: true

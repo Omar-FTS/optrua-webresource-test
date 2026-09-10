@@ -1,0 +1,12 @@
+{
+  "resources": [
+    {
+      "name": "taradeh_automated_main_operations.js",
+      "webresourceid": "8073a323-2fad-f111-aaab-0022480a1382",
+      "webresourcetype": 3,
+      "sourcePath": "src/Resources/scripts/taradeh_automated_main_operations.js",
+      "baselinePath": "docs/tasks/dataverse-requirements-specification-19112dfb/metadata/baselines/taradeh_automated_main_operations.js",
+      "baselineSha": "e6f977734e2f9f06c872255a9739db1be9abd4becdca3a282461900ac3535bdb"
+    }
+  ]
+}

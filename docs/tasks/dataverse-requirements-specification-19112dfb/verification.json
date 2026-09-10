@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "name": "taradeh_automated_main_operations.js",
+      "action": "updated",
+      "guard": "ok",
+      "published": true
+    }
+  ],
+  "forms": [
+    {
+      "entity": "taradeh_automated",
+      "form": "Automated form",
+      "verified": true
+    }
+  ],
+  "problems": [],
+  "verified": true
+}
