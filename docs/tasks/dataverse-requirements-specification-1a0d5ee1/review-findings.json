@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "review_summary": "Working-tree review of adw/1a0d5ee1 against base_ref=main found no findings surviving confidence filtering on either axis. Standards axis (okfs/webresource bundle) found the new taradeh_automated_main_operations.js web resource, its Orgb788707aAutomatedSdk namespace, and its onload registration fully conformant. Spec axis (start-content_source.json requirement) found FR-1, FR-2, AU-1, AU-2, BD-2, BD-3 met and no scope creep; FR-3's deployment half is unfulfilled only because this run's stage is 'planned' with no deploy step yet executed, which is not a defect in the reviewed change.",
+  "blocker_count": 0,
+  "review_issues": []
+}

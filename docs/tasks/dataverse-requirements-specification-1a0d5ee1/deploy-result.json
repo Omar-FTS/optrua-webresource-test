@@ -1,0 +1,41 @@
+{
+  "status": "DEPLOYED",
+  "reason": "",
+  "environmentUrl": "https://orgb788707a.crm.dynamics.com",
+  "solutionName": "webresourceAutomatedForm",
+  "resources": [
+    {
+      "name": "taradeh_automated_main_operations.js",
+      "type": 3,
+      "sourcePath": "src\\Resources\\scripts\\taradeh_automated_main_operations.js",
+      "action": "updated",
+      "error": "",
+      "guard": "ok",
+      "baselineSha": "552dd83a0c654764bc7fa6289bdb1363ed20c0566c4f38b02ea0d54f6f5e62c7",
+      "liveShaAtDeploy": "552dd83a0c654764bc7fa6289bdb1363ed20c0566c4f38b02ea0d54f6f5e62c7",
+      "published": true,
+      "solutionAssociated": true
+    }
+  ],
+  "formPatches": [
+    {
+      "entity": "taradeh_automated",
+      "form": "Automated form",
+      "libraries": [
+        "taradeh_automated_main_operations.js"
+      ],
+      "handlers": [
+        {
+          "control": "form",
+          "event": "onload",
+          "handler": "Orgb788707aAutomatedSdk.formOnLoad",
+          "controlPresent": true,
+          "persisted": true
+        }
+      ],
+      "verified": true,
+      "error": ""
+    }
+  ],
+  "problems": []
+}

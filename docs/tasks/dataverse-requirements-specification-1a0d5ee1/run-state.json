@@ -1,0 +1,27 @@
+{
+  "slug": "dataverse-requirements-specification",
+  "solution_name": "webresourceAutomatedForm",
+  "run_started_at": "2026-09-10T12:36:42Z",
+  "base_sha": "a5bdaaaf036728f986990adb9ea71d72ea70a0e6",
+  "base_branch": "main",
+  "stage": "e2e",
+  "checkpoints": [
+    {
+      "stage": "planned",
+      "sha": "a4ad181411ae9e141c7654ee43a0ce62f9110d8d"
+    },
+    {
+      "stage": "reviewed",
+      "sha": "17c212c28b4b13e04327bebad4cac0066fdcda22"
+    },
+    {
+      "stage": "deployed",
+      "sha": "9aa6ab882fd0d0fa448c44039d3d4d66af756c1b"
+    },
+    {
+      "stage": "e2e",
+      "sha": "00fd5d105ee19da47e8a630007107e4a3bcfac7a"
+    }
+  ],
+  "publisher_prefix": "taradeh"
+}
