@@ -1,0 +1,35 @@
+version: "1"
+webResources:
+  - name: taradeh_automated_main_operations.js
+    type: JavaScript
+    displayName: Automated form script
+    description: >-
+      OnLoad handler for the Automated form on taradeh_automated. Defaults the Title
+      field to the literal "order:" when a new record is being created; leaves Title
+      untouched on any other form type.
+    sourceFile: src/Resources/scripts/taradeh_automated_main_operations.js
+    origin: new
+    removes: []
+    targetForms:
+      - entity: taradeh_automated
+        formName: Automated form
+        formType: Main
+    events:
+      - control: form
+        name: onload
+        handler: Orgb788707aAutomatedSdk.formOnLoad
+        passExecutionContext: true
+    clientApiSurface:
+      - executionContext.getFormContext
+      - formContext.ui.getFormType
+      - formContext.getAttribute
+    context:
+      reuseRefs: []
+      notes: >-
+        No resource is deployed against taradeh_automated: the entity-scoped inventory
+        (taradeh_automated.json) shows data.facets.web-resources.data.webResources as an
+        empty array and data.facets.forms.data.formUsage carrying no libraries and no
+        handlers, so this is a from-scratch build, not an extension. There is no
+        established src/Resources layout in this repository yet; the sourceFile path
+        follows the schema's documented convention (scripts/ under the project's
+        resource root) since none is already in place to preserve.
